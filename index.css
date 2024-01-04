@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+  
+  header{
+    background-color: #FF9A6C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 24px;
+    padding-bottom: 24px;  
+  }
+  header nav a {
+    color: #FFFF;
+    font-weight: 600;
+    padding: 32px;
+    text-decoration: none;
+    
+  }
+  
+  #inicio{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 24 80 120 80;
+    /*o padding sempre segue a ordem topo, direita, baixo, esquerda*/
+    position: relative;
+  }
+  /* Posso usar a mesma configuração em mais elementos colocando-os em sequência com virgula*/ 
+  h1,
+  h2{
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  
+  .paragrafo{
+    line-height: 180%;
+    margin-bottom: 32px;
+  }
+  .botao{
+  background-color:#FF725E;
+    /*padding vertical e horizontal*/
+    line-height: 40%;
+  padding: 16px 32px;
+    /*arredondamento de bordas*/
+  border-radius: 8px;
+    /*cor do texto*/
+  color: #FFFF;
+    /*retirada do sublinhado*/
+  text-decoration: none;
+  }
+  
+  .botao-transparente{
+    background-color: transparent;
+    padding: 16px 32px;
+    border-radius: 8px;
+    color: #FF725E;
+    text-underline-offset: 4px;
+  }
+  
+  .absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /*z-index é a profundidade do elemento, posso coloca-lo na frente ou atrás do site todo.*/
+    z-index: -10;
+  }
+  
+  #clinica {
+    display: flex;
+    align-items: center ;
+    gap: 80px;
+    padding: 64px 80px;
+  }
+  
+  #clinica li {
+    margin-bottom: 16px;
+    margin-left: 32px;
+  }
+  
+  #farmacia {
+    padding: 64px 80px;
+    text-align: center;
+  }
+  
+  #farmacia img {
+    margin: 64px auto;
+  }
+  
+  #farmacia .paragrafo-f {
+    max-width: 950px;
+    margin: 0 auto;
+     }
+
+
+     #duvidas{
+      display: flex;
+      align-items:center ;
+      gap: 80px;
+      padding: 64px 80px;
+     }
+     
+ 
+     .duvida h3{
+      border: 2px solid #e06251;
+      border-radius: 8px;
+      cursor: pointer;
+      padding: 24px;
+      
+    }
+
+
+.duvida{
+  position: relative;
+
+}
+
+.duvida img{
+  position: absolute;
+  top: 32px;
+  right: 64px;
+}
+
+.duvida .paragrafo{
+   border-right: 1px solid #FF725E;
+   border-left: 1px solid #FF725E;
+   border-bottom: 1px solid #FF725E;
+   border-radius: 0 0 8px 8px;
+   margin-top: -8px;
+  padding: 0 24px;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: .2s;
+  
+}
+
+.duvida.ativa .paragrafo{
+  height: fit-content;
+  opacity: 1;
+  padding: 24px;
+  
+}
+
+footer {
+  background-color: rgba(255 152 188 8.25);
+  display: flex;
+  gap: 80px;
+  padding: 64px 80px;
+}
+
+footer img,
+footer .titulo {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 24px;
+  
+}
+
+footer nav a {
+  color: #263138;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+
+footer p{
+  margin-bottom: 16px;
+  max-width: 350px;
+}
+
+footer p a{
+  color: #263138;
+  text-decoration: none;
+}
+
+#copyrigth {
+  background-color: #263138; 
+  color: #FFFF;
+  padding: 24px;
+  text-align: center;
+}
+
+#copyrigth a {
+  color: #FF725E;
+  text-decoration: none;
+} 
